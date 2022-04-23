@@ -124,39 +124,39 @@
 
 // }
 
-// function ex10(){
-//     var hours = document.getElementById("hours").value;
-//     var minutes = document.getElementById("minutes").value;
-//     var angle ;
-//     angle= Math.abs(6*minutes -30*hours);
-//     document.getElementById("angle").innerHTML ="Goc giua 2 kim : "+angle
-// }
+function ex10(){
+    var hours = document.getElementById("hours").value;
+    var minutes = document.getElementById("minutes").value;
+    var angle ;
+    angle= Math.abs(6*minutes -30*hours-minutes*0.5);
+    document.getElementById("angle").innerHTML ="Goc giua 2 kim : "+angle
+}
 
 
 
 // File hinh anh
 // 11.Nhap 3 so nguyen , sap xep theo thu tu tang dan
 
-// function ex11(){
-//     var array =[];
-//     var numberArray = document.getElementsByClassName("number");
-//     for(var i=0; i<numberArray.length; i++){
-//         array.push(numberArray[i].value);
-//     }
+function ex11(){
+    var array =[];
+    var numberArray = document.getElementsByClassName("number");
+    for(var i=0; i<numberArray.length; i++){
+        array.push(numberArray[i].value);
+    }
     
-//    var temp;
-//     for(var k=0;k<array.length-1;k++){
-//        for(var j=k+1;j<array.length;j++){
-//            if(array[j]<array[k]){
-//                 temp=array[k];
-//                 array[k]=array[j];
-//                 array[j]=temp;
-//            }
-//        }
-//     }
+   var temp;
+    for(var k=0;k<array.length-1;k++){
+       for(var j=k+1;j<array.length;j++){
+           if(array[j]<array[k]){
+                temp=array[k];
+                array[k]=array[j];
+                array[j]=temp;
+           }
+       }
+    }
     
-//     document.getElementById("arrange").innerHTML = array.join(",");
-// }
+    document.getElementById("arrange").innerHTML = array.join(",");
+}
 
 // 12.Nhap ngay thang nam , in ra ngay truoc va sau
 // function ex12(){
